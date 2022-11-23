@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Слайдер на CSS</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/index.css" />
+  </head>
+  <body>
+    <section class="slide section">
+      <input checked type="radio" name="respond" id="desktop" />
+      <article id="slider">
+        <input checked type="radio" name="slider" id="switch1" />
+        <input type="radio" name="slider" id="switch2" />
+        <input type="radio" name="slider" id="switch3" />
+        <div class="slides">
+          <div class="overflow">
+            <div class="slides__container">
+              <article class="slides__item">
+                <picture class="picture">
+                  <source
+                    srcset="
+                      /images/Slider-1-1x.jpg 1x,
+                      /images/Slider-1-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      /images/Slider-1-tab-1x.jpg 1x,
+                      /images/Slider-1-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/Slider-1-mob-1x.jpg 1x,
+                      /images/Slider-1-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="container__image"
+                    src="/images/Slider-1-1x.jpg"
+                    alt="Keyboard"
+                  />
+                </picture>
+
+                <div class="title-container first">
+                  <h2 class="slide__title visually-hidden">
+                    One place for everything you want
+                  </h2>
+                  <p class="slide__title first">
+                    One place for everything you want
+                  </p>
+                </div>
+              </article>
+              <article class="slides__item">
+                <picture class="picture">
+                  <source
+                    srcset="
+                      /images/Slider-2-1x.jpg 1x,
+                      /images/Slider-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      /images/Slider-2-tab-1x.jpg 1x,
+                      /images/Slider-2-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/Slider-2-mob-1x.jpg 1x,
+                      /images/Slider-2-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="container__image"
+                    src="/images/Slider-2-1x.jpg"
+                    alt="Players"
+                  />
+                </picture>
+                <div class="title-container second">
+                  <h2 class="slide__title visually-hidden">
+                    Best shop for buying gaming products
+                  </h2>
+                  <p class="slide__title second">
+                    Best shop for buying gaming products
+                  </p>
+                </div>
+              </article>
+              <article class="slides__item">
+                <picture class="picture">
+                  <source
+                    srcset="
+                      /images/Slider-3-1x.jpg 1x,
+                      /images/Slider-3-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      /images/Slider-3-tab-1x.jpg 1x,
+                      /images/Slider-3-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/Slider-3-mob-1x.jpg 1x,
+                      /images/Slider-3-mob-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="container__image"
+                    src="/images/Slider-3-1x.jpg"
+                    alt="Playstation"
+                  />
+                </picture>
+
+                <div class="title-container third">
+                  <h2 class="slide__title visually-hidden">
+                    High-quality products in lowest price
+                  </h2>
+                  <p class="slide__title third">
+                    High-quality products in lowest price
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="active-point">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
