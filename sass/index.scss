@@ -44,6 +44,18 @@ body {
   overflow: hidden;
 }
 
+.section-btn {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.btn {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #8bda41;
+}
+
 .slides .slides__container {
   /*анимация пролистывания изображений*/
   transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
