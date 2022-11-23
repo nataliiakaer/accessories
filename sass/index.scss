@@ -52,7 +52,7 @@ a {
 }
 
 body {
-  background-color: #043835;
+  background-color: #01383a;
 }
 
 .visually-hidden {
@@ -67,6 +67,16 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.section.slide {
+  @media screen and (max-width: 768px) {
+    padding-bottom: 48px;
+  }
+
+  @media screen and (min-width: 767.9px) {
+    padding-top: 120px;
+  }
 }
 
 .slides .slides__container {
