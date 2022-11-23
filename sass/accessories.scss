@@ -1,13 +1,20 @@
 .section-btn {
+  text-align: center;
   padding: 15px 0;
   text-align: center;
-}
-
-.btn-index {
+  border: 1px solid red;
   height: 50px;
+  width: 150px;
   border-radius: 5px;
   border: none;
-  background-color: #8bda41;
+  background-color: blue;
+  cursor: pointer;
+  justify-content: center;
+  color: #fff;
+}
+
+body .section-btn {
+  margin: 15px auto;
 }
 
 p,

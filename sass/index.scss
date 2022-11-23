@@ -1,3 +1,28 @@
+.section-btn {
+  text-align: center;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid red;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+  cursor: pointer;
+  justify-content: center;
+  color: #fff;
+}
+
+.h2-sl {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+body .section-btn {
+  margin: 15px auto;
+}
+
 p,
 h1,
 h2,
@@ -42,18 +67,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.section-btn {
-  padding: 15px 0;
-  text-align: center;
-}
-
-.btn {
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background-color: #8bda41;
 }
 
 .slides .slides__container {
@@ -240,7 +253,6 @@ label {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 
   @media screen and (min-width: 768px) {
     width: 519px;
@@ -262,7 +274,6 @@ label {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 
   @media screen and (min-width: 768px) {
     width: 526px;
@@ -279,7 +290,6 @@ label {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
   }
 }
 
@@ -294,7 +304,6 @@ label {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 
   @media screen and (min-width: 768px) {
     width: 551px;
@@ -307,7 +316,6 @@ label {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
   }
 
   @media screen and (min-width: 1280px) {
@@ -321,6 +329,5 @@ label {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
   }
 }

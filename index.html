@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Слайдер на CSS</title>
     <meta charset="UTF-8" />
@@ -22,14 +22,14 @@
     <link rel="stylesheet" href="./sass/index.css" />
   </head>
   <body>
-    <section class="section-btn">
-      <button class="btn">
-        <a href="/accessories.html">All accessories</a>
-      </button>
-    </section>
+    <div class="section-btn">
+      <a href="./accessories.html" class="another-page">All accessories</a>
+    </div>
     <section class="slide section">
+      <h2 class="h2-sl">slide</h2>
       <input checked type="radio" name="respond" id="desktop" />
       <article id="slider">
+        <h2 class="slide__title visually-hidden">Slide</h2>
         <input checked type="radio" name="slider" id="switch1" />
         <input type="radio" name="slider" id="switch2" />
         <input type="radio" name="slider" id="switch3" />
@@ -37,6 +37,9 @@
           <div class="overflow">
             <div class="slides__container">
               <article class="slides__item">
+                <h2 class="slide__title visually-hidden">
+                  One place for everything you want
+                </h2>
                 <picture class="picture">
                   <source
                     srcset="
@@ -67,15 +70,15 @@
                 </picture>
 
                 <div class="title-container first">
-                  <h2 class="slide__title visually-hidden">
-                    One place for everything you want
-                  </h2>
                   <p class="slide__title first">
                     One place for everything you want
                   </p>
                 </div>
               </article>
               <article class="slides__item">
+                <h2 class="slide__title visually-hidden">
+                  Best shop for buying gaming products
+                </h2>
                 <picture class="picture">
                   <source
                     srcset="
@@ -105,15 +108,15 @@
                   />
                 </picture>
                 <div class="title-container second">
-                  <h2 class="slide__title visually-hidden">
-                    Best shop for buying gaming products
-                  </h2>
                   <p class="slide__title second">
                     Best shop for buying gaming products
                   </p>
                 </div>
               </article>
               <article class="slides__item">
+                <h2 class="slide__title visually-hidden">
+                  High-quality products in lowest price
+                </h2>
                 <picture class="picture">
                   <source
                     srcset="
@@ -144,9 +147,6 @@
                 </picture>
 
                 <div class="title-container third">
-                  <h2 class="slide__title visually-hidden">
-                    High-quality products in lowest price
-                  </h2>
                   <p class="slide__title third">
                     High-quality products in lowest price
                   </p>
